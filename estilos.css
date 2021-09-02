@@ -13,3 +13,46 @@ p {
 .border {
     border: 1px solid black;
 }
+
+/*Elemento que contenga el atributo puede llevar div o no */
+div[attr1] {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*El valor del atribto debe ser completamente igual*/
+[attr1="Parrafo uno"]
+{
+    font-size: 20px;
+}
+
+/*El valor comienza con la cadena dada*/
+[attr1|="Parrafo"]
+{
+    font-weight: bold;
+}
+
+/*El valor comienza con los caracteres dados*/
+[attr1^="Pa"]
+{
+    color: brown;
+}
+
+/*El valor termine con los caracteres dados*/
+[attr1$="s"]
+{
+    margin-left: 30px;
+}
+
+/*El valor contiene la cadena dada*/
+[attr1~="Parrafo"]
+{
+    border: 1px solid black;
+}
+
+/*El valor contiene los caracteres dados*/
+[attr1*="u"]
+{
+    text-transform: uppercase;
+}
+
+
