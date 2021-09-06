@@ -5,17 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        [name="conditions"]:checked{
+            margin-left: 50px;
+        }
+
+        [type="text"]:focus{  
+            box-shadow: 5px 5px 10px red;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+        #boton_fake {
+            border: 1px solid darkgray;
+            border-radius: 2px;
+        }
+
+        #boton_fake:hover {
+            cursor:pointer;
+        }
+        
+
+        input:required {
+            color: darkgreen;
+        }
+
+        #p_aux::after{
+            content: url("logo.png");
+        }
+
+        #p_aux::first-letter{
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+
+        #p_aux::first-line{
+            color: darkmagenta;
+        }
+
+        #p_aux::selection{
+            background-color: yellowgreen;
+        }
+
+    </style>
 </head>
 <body>
     <form action="">
         <label for="username">Nombre de usuario</label>
-        <input type="text" name="username">
+        <input type="text" name="username"> <!-- autocomplete="off" -->
         <br>
         <label for="birthday">Fecha de nacimiento</label>
         <input type="date" name="birthday">
         <br>
         <label for="age">Edad</label>
-        <input type="number" name="age" step="0.5">
+        <input type="number" name="age" step="0.5" required>
         <br>
         <input type="checkbox" name="conditions">
         <label for="conditions">Acepta los términos y condiciones</label>
@@ -54,5 +99,11 @@
 
     </form>
     <button>Otrobotón</button>
+    <br>
+    <div id="boton_fake">Presiona aqui</div>
+    <br>
+    <p id="p_aux">lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, corporis deserunt. Dignissimos eaque ratione expedita beatae impedit commodi laborum sapiente quaerat, explicabo recusandae doloremque inventore saepe sed, perferendis, dicta assumenda?</p>
+
+
 </body>
 </html> 
