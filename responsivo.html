@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 10px;
+        }
+        div {
+            font-size: 20px;
+        }
+
+        p {
+            color: brown;
+            font-size: 2em; /*depende de el elemento padre*/
+        }
+         
+        a {
+            font-size: 1.5rem; /* depende de html*/ 
+        }
+
+        h1{
+            /* font-size: 2vw;*//* ancho */
+            font-size: 5vh; /*alto*/
+        }
+
+        #aux {
+            width: 50%;
+        }
+
+        img{
+            /* width: 25%; */
+            width: 25 vw;
+        }
+        @media (min-width: 768px){
+            p{
+                color: darkblue; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Hola mundo
+    </h1>
+    <div id="aux">
+        <img src="logo.png" alt="">
+
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In repellendus veniam animi esse ipsa delectus earum mollitia consequatur laboriosam iste accusantium, quae quas similique? Sequi, voluptas. Animi ut voluptates culpa?</p>
+
+        <a href="">LINK</a>
+    </div>
+</body>
+</html>
