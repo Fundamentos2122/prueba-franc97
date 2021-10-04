@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #padre {
+            background-color: rgb(30, 30, 119);
+            /* padding: 10px; */
+            display: flex;
+            height: 400px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            /* align-content: space-between; */
+            /* justify-content: flex-start; */ 
+            /* align-items: flex-end; */
+        }
+
+        #padre > div {
+            background-color: lightsalmon;
+            padding: 10px;
+            display: flex;
+        }
+
+        #padre [id]{
+            background-color: lightgray;
+            padding: 6px;
+            font-size: 2em;
+            margin: 10px;
+            display: flex;
+        }
+
+        #div1 {
+            height: 100px;
+        }
+
+        #div2 {
+            height: 50px;
+        }
+
+        #div3 {
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="padre">
+        <div>
+            <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        </div>
+        <!-- <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div> -->
+       
+    </div>
+    
+</body>
+</html>
