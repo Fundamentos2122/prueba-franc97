@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="login" name="login">
+        <label for="username">Nombre de usuario</label>
+        <input type="text" name="username" autocomplete="off">
+        <br>
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" autocomplete="off">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <script>
+            document.addEventListener("DOMContentLoaded", function(){
+            //    var login = document.getElementById["login"];
+
+               var login = document.forms["login"];
+               login.addEventListener("submit", function(e) {
+                   e.preventDefault();
+
+                   var adata = {
+                       username: this["username"].value,
+                       password: this["password"].value,
+                   };
+                   console.log(data);
+
+                   var json = JSON.stringify(data);
+
+                   console.log(json);
+
+               });
+               loadForm();
+
+               function loadForm(){
+                    var json = '{"username": "Josué", "pass2word": "1234"}';
+                    
+                    var data = JSON.parse(json);
+
+                    console.log(data);
+
+                    document.forms["login"]["username"].value = data.username;
+
+                    document.forms["login"]["password"].value = data.password;
+
+               }
+            });
+
+    </script>
+</body>
+</html>
